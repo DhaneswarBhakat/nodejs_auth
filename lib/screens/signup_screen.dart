@@ -16,6 +16,8 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController nameController = TextEditingController();
   final AuthService authService = AuthService();
 
+/// The `signupUser` function calls the `signUpUser` method from `authService` with the provided
+/// context, email, password, and name.
   void signupUser() {
     authService.signUpUser(
       context: context,

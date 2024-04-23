@@ -14,6 +14,8 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController passwordController = TextEditingController();
   final AuthService authService = AuthService();
 
+/// The `loginUser` function in Dart calls the `signInUser` method of `authService` with the context,
+/// email, and password parameters.
   void loginUser() {
     authService.signInUser(
       context: context,
